@@ -1,6 +1,14 @@
-<!DOCTYPE html>
-<html>
-	<head>
+
+<!DOCTYPE html5>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="js/jquery.js"></script>
+				<!--  Fonts -->
+				<link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans|Roboto" rel="stylesheet">
 				<!--  Bootstrap start -->
 				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 				integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -10,62 +18,172 @@
 				integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 				<!-- bootstrap end -->
 				<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-				<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-				<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-				<script src="js/jquery.js"></script>
+				
 				<script src="js/scroll.js"></script>
+				<script src="js/fb_tracking.js"></script>
 				<link rel="icon" href="http://www.umea.se/images/18.65771eb14bfe25fed29881/1430373344652/favicon.ico">
 		<meta charset="utf-8">
-		<title>Make IT Umeå</title>
+		<title>MakeIT Umeå</title>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-89164159-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '148364992464919'); 
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" src="https://www.facebook.com/tr?id=148364992464919&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 	</head>
 	<body>
-		<div class="main first" id="section1">
+
+
+
+		<header class="logo" id="header">
 			<div class="nav" id="nav">
 				<ul class="navul">
-					<a href="#section2" class="s2 navli"></a>
-					<a href="#section3" class="s3 navli"></a>
-					<a href="#section4" class="s4 navli"></a>
-					<a href="#section5" class="s5 navli"></a>
-					<a href="#section6" class="s6 navli"></a>
+					<a href="#section1" class="navli pink"></a>
+					<a href="#section2" class="navli green"></a>
+					<a href="#section3" class="navli orange"></a>
+					<a href="#section4" class="navli blue"></a>
+					<a href="#section5" class="navli pink"></a>
 				</ul>
 			</div>
-		</div>
-		<div class="main second" id="section2">
-			<div class="banner">
-				Mer än att hacka kod
-			</div>
-			<a href="#section3"><div class="arrow sec-arrow"><span class="glyphicon glyphicon-chevron-down"></span></div></a>
-		</div>
-		<div class="main third" id="section3">
-			<div class="banner">
-				Hur är det att jobba med IT?
-			</div>
-			<a href="#section4"><div class="arrow third-arrow"><span class="glyphicon glyphicon-chevron-down"></span></div></a>
-		</div>
-		<div class="main fourth" id="section4">
-			<div class="banner">
-				Det här är Umeås IT-Bransch
-			</div>
-			<a href="#section5"><div class="arrow fourth-arrow"><span class="glyphicon glyphicon-chevron-down"></span></div></a>
-		</div>
-		<div class="main fifth" id="section5">
-			<div class="banner">
-				Vad ska jag läsa?
-			</div>
-			<div class="container">
-			</div>
-			<a href="#section6"><div class="arrow fifth-arrow"><span class="glyphicon glyphicon-chevron-down"></span></div></a>
-		</div>
-		<div class="main sixth" id="section6">
-			<div class="banner">
-				Det här är Make IT
-			</div>
-			<div class="container">
+		</header>
+
+
+		<section class="pink" id="section1">
+      <div class="down-arrow  pink"><a href="#section1"><span class="glyphicon glyphicon-chevron-down"></span></a></div>
+			<h2 class="banner">Mer än att hacka kod</h2>
+
+      <p class="midline">Tror du att IT-branschen enbart behöver dem som kan hacka kod? Då tror
+      du fel. Dagens IT-bolag söker sociala problemlösare som på ett kreativt
+      sätt kan ta sig an kundernas utmaningar. Att jobba med IT idag handlar lika mycket om att 
+	      kunna förstå de situationer då tekniken ska roa, hjälpa och underlätta för människor 
+	      som att programmera och designa gränssnitt.
+      Därför är det viktigt att du är social, bra på att lyssna och kan lösa
+      problem i ett nära samarbete med kunden. Välkommen till en spännande
+      framtidsbransch som behöver dig – och där du har stora möjligheter att
+      få ett välbetalt jobb!</p>
+
+      <h3 class="midline">Social</h3>
+      <p class="midline">När du jobbar i ett IT-bolag i dag har du ett nära samarbete med dina
+      kunder. IT-bolagen söker därför dig som är social och gillar att träffa
+      andra människor.</p>
+
+      <h3 class="midline">Kreativ</h3>
+      <p class="midline">Älskar du att vara kreativ? Då är IT-branschen superintressant för dig!
+      Här får du chansen att kläcka idéer och komma på nya lösningar – varje dag.</p>
+
+      <h3 class="midline">Problemlösare</h3>
+      <p class="midline">Triggas du av att lösa problem? På dagens IT-bolag ställs du ständigt
+      inför nya utmaningar, då produkterna både skall vara smarta och snygga
+      samtidigt som de löser de problem och behov användarna har.</p>
 
 			</div>
+		</section>
+
+
+
+		<section class="green" id="section2">
+      <div class="down-arrow  green"><a href="#section2"><span class="glyphicon glyphicon-chevron-down"></span></a></div>
+			<h2 class="banner">Hur är det att jobba med IT?</h2>
+      <p class="midline">Lyssna på några av de som arbetar i Umeås IT-bransch
+      som berättar om hur just de ser på sitt jobb och varför de hamnade där de är idag.</p>
+
+      <div class="midline youtube">
+        <iframe class="youtube" src="https://www.youtube.com/embed/7rEG5hhT-CQ" frameborder="0" allowfullscreen></iframe>
+        <iframe class="youtube" src="https://www.youtube.com/embed/_fG0xWRkbwc" frameborder="0" allowfullscreen></iframe>
+        <iframe class="youtube" src="https://www.youtube.com/embed/QN65GrfLmW4" frameborder="0" allowfullscreen></iframe>
+        <iframe class="youtube" src="https://www.youtube.com/embed/m5c-eRWMPuE" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+		</section>
+
+
+
+		<section class="orange" id="section3">
+      <div class="down-arrow  orange"><a href="#section3"><span class="glyphicon glyphicon-chevron-down"></span></a></div>
+			<h2 class="banner">Det här är Umeås IT-bransch</h2>
+      <p class="midline">Över 2000 människor arbetar inom IT-branschen i Umeå
+        med allt ifrån dataspelsutveckling, drift av världens börssystem till
+        utveckling av appar för Virtual Reality-glasögon och framtidens mobilbank.</p>
+
+      <p class="midline">På InfoTech Umeås hemsida, <a href="http://www.infotechumea.se" target="_blank">www.infotechumea.se</a>, kan du läsa mer om alla
+        Umeås IT-bolag samt läsa IT-nyheter från regionen</p>
+
+
+		</section>
+
+
+
+		<section class="blue" id="section4">
+      <div class="down-arrow  blue"><a href="#section4"><span class="glyphicon glyphicon-chevron-down"></span></a></div>
+			<h2 class="banner">
+				Vad ska jag läsa?
+			</h2>
+      <p class="midline">Bästa gymnasieutbildningarna är Naturvetenskapsprogrammet
+        och Teknikprogrammet. Men du kan även läsa andra utbildningar, då
+        IT-branschen som sagt var behöver flera typer av människor.
+        Prata med din SYV för mer information.</p>
+
+      <p class="midline">  Ditt gymnasieval gör du direkt på
+        <a class="fb_track" data-href="http://www.gymnasieantagningen.nu" target="_blank">www.gymnasieantagningen.nu</a></p>
+		</section>
+
+
+
+		<section class="pink" id="section5">
+      <div class="down-arrow pink"><a href="#section5"><span class="glyphicon glyphicon-chevron-down"></span></a></div>
+			<h2 class="banner">
+				Det här är MakeIT
+			</h2>
+      <p class="midline">Make IT är ett nätverk som jobbar för att öka
+        IT-intresset hos unga i Umeå. IT-branschen växer, vi behöver fler som
+        pluggar och arbetar med IT. </p>
+
+
+      <p class="midline">Medlemmarna i nätverket är
+         Acino, Atea, CGI, Cinnober, CodeMill, Dohi, Hi5, KnowIT, NTI-gymnasiet, Paradox Interactive, Sogeti, Spacetime Communications, Svenska Försäkringsfabriken, Tieto, Umeå universitet och Umeå kommun.
+      </p>
+
+
+		</section>
+
+
+    <footer class="white" id="footer">
+      <div class="down-arrow white"><a href="#footer"><span class="glyphicon glyphicon-chevron-down white"></span></a></div>
+      <div class="container">
+
+          <a href="http://www.ntigymnasiet.se/umea" target="_blank"><img class="nti-logo" src="bilder/nti_elev_inverted.png"></a>
+
+      </div>
+		</footer>
+
+
+		<div id="up-arrow">
+			<a href="#header"><span class="glyphicon glyphicon-chevron-up"></span></a>
 		</div>
-		<div class="up-circle">
-			<a href="#section1" class="up-arrow"><span class="glyphicon glyphicon-chevron-up"></span></a>
-		</div>
+
+
+
 	</body>
 </html>
